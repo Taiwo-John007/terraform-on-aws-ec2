@@ -5,7 +5,7 @@ module "ec2_private" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   #version = "2.17.0"
   #version = "5.6.0"
-  version = "6.0.2"
+  version = "6.1.1"
   # insert the 10 required variables here
   name                   = "${var.environment}-vm"
   ami                    = data.aws_ami.amzlinux2.id
@@ -29,7 +29,7 @@ module "ec2_private" {
 
 # ELEMENT Function
 # terraform console 
-# element(["kalyan", "reddy", "daida"], 0)
-# element(["kalyan", "reddy", "daida"], 1)
-# element(["kalyan", "reddy", "daida"], 2)
+# element(["taiwo", "joseph", "John"], 0)
+# element(["taiwo", "joseph", "John"], 1)
+# element(["taiwo", "joseph", "John"], 2)
 
